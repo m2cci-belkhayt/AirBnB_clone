@@ -87,7 +87,8 @@ align: the top right (with space)*/
     margin-top: 5px;
   }
 
-.user::first-line  {
+  .user::before {
+    content: "Owner: ";
     font-weight: bold;
 }
 
