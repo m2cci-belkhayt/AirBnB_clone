@@ -1,53 +1,142 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-.container {
-      position: absolute;
-      width: 300px;
-      height: 200px;
-      border: 10px solid #000000;
-      background-color: #3498db;
-    }
+    <title>Airbnb-clone</title>
+    <link rel="icon" href="./images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="styles/3-header.css">
+    <link rel="stylesheet" type="text/css" href="styles/3-footer.css">
+    <link rel="stylesheet" type="text/css" href="styles/4-common.css">
+    <link rel="stylesheet" type="text/css" href="styles/6-filters.css">
+    <link rel="stylesheet" type="text/css" href="styles/100-places.css">
 
-    .location {
-      position: relative;
-      top: 20%; /* Adjust this value to set the top position */
-      left: 0px; /* Adjust this value to set the left position */
-      border-right: 5px solid #000000;
-      padding: 5%;
-      background-color: #ffffff; /* Set a background color for better */}
-
-button {
-    position: absolute;
-    font-size: 18px;
-    background: #FF5A5F;
-    color: #FFFFFF;
-    height: 48px;
-    width: 20%;
-    border-style: none;
-    border-radius: 4px;
-    top: 30%;
-    right: 2%;
-    }
-  </style>
 </head>
+
 <body>
 
-  <div class="container">
-    
-    <div class="location"><label >Click me to expand</label>
-  <ul>
-    <li>Item 1</li>
-    <li>Item 2</li>
-    <li>Item 3</li>
-  </ul>
-</div>
-    <button class="button"> me</button>
-  </div>
+    <header class="logo">
+        Updated Text for Testing
+    </header>
+    <div class="container">
+        <section class="filters">
+            <div class="locations">
+                <h3>States</h3>
+                <h4>California, Texas...</h4>
+                <ul class="popover">
+                    <li><h2>Arizona:</h2>
+                        <ul>
+                            <li>Phoenix</li>
+                            <li>Tucson</li>
+                        </ul>
+                    </li>
+                    <li><h2>California:</h2>
+                        <ul>
+                            <li>Los Angeles</li>
+                            <li>San Francisco</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="amenities">
+                <h3>Amenities</h3>
+                <h4>Internet, Kitchen...</h4>
+                <ul class="popover">
+                    <li>Internet</li>
+                    <li>TV</li>
+                    <li>Kitchen</li>
+                    <li>Iron</li>
+                </ul>
+            </div>
+            <button>
+                Search
+            </button>
+
+        </section>
+
+        <section class="places">
+            <h1> Places </h1>
+            <article>
+                <h2> My Cozy Home </h2>
+                <div class="price_by_night">$80</div>
+                <div class="information">
+                    <div class="max_guest">3 guests</div>
+                    <div class="number_rooms"> 2 bedrooms
+                    </div>
+                    <div class="number_bathrooms">  2 bathrooms
+                    </div>
+                </div>
+                <div class="user">John Doe</div>
+                <div class="description">Comfortable home with a great view.</div>
+
+                <div class="amenities">
+                    <h2>Amenities</h2>
+                    <ul>
+                        <li class="tv">TV</li>
+                        <li class="wifi">Wi-Fi</li>
+                        <li class="pets">Pet-Friendly</li>
+                    </ul>
+                </div>
+                <div class="reviews">
+                    <h2>2 Reviews</h2>
+                    <ul>
+                        <li>
+                            <h3>From Alice on January 27, 2017</h3>
+                            <p>Great host, wonderful experience!</p>
+                        </li>
+                        <li>
+                            <h3>From Bob on January 4, 2017</h3>
+                            <p>Highly recommended!</p>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+            <article>
+                <h2> Beachfront Paradise </h2>
+                <div class="price_by_night">$150</div>
+                <div class="information">
+                    <div class="max_guest">4 guests</div>
+                    <div class="number_rooms"> 3 bedrooms
+                    </div>
+                    <div class="number_bathrooms">  2.5 bathrooms
+                    </div>
+                </div>
+                <div class="user">Jane Smith</div>
+                <div class="description">Relaxing beachfront property with stunning ocean views.</div>
+                <div class="amenities">
+                    <h2>Amenities</h2>
+                    <ul>
+                        <li class="tv">TV</li>
+                        <li class="wifi">Wi-Fi</li>
+                        <li class="pets">Pet-Friendly</li>
+                    </ul>
+                </div>
+                <div class="reviews">
+                    <h2>3 Reviews</h2>
+                    <ul>
+                        <li>
+                            <h3>From Mary on February 15, 2017</h3>
+                            <p>Amazing location, enjoyed every moment!</p>
+                        </li>
+                        <li>
+                            <h3>From James on January 8, 2017</h3>
+                            <p>A perfect getaway!</p>
+                        </li>
+                        <li>
+                            <h3>From Emily on December 20, 2016</h3>
+                            <p>Beautiful property, great experience.</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </article>
+        </section>
+    </div>
+
+    <footer>
+        Best Vacation Rentals
+    </footer>
 
 </body>
+
 </html>
